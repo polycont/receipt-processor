@@ -41,7 +41,6 @@ To setup this project and run it properly locally, here are some steps you'll ne
   "total": "35.35"
 }
 ```
-```text
 
 2. This receipt should be pasted into the request body of the Process Receipts (POST) route.
 3. Run the API using 'go run main.go' or your IDE's launch system.
