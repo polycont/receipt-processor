@@ -15,30 +15,33 @@ To setup this project and run it properly locally, here are some steps you'll ne
 
 1. To test either of the available routes, you'll first need a single receipt that matches the following format (there can be any number of items in the "items" slice):
 
-{<br>
-  "retailer": "Target",<br>
-  "purchaseDate": "2022-01-01",<br>
-  "purchaseTime": "13:01",<br>
-  "items": [<br>
-    {<br>
-      "shortDescription": "Mountain Dew 12PK",<br>
-      "price": "6.49"<br>
-    },{<br>
-      "shortDescription": "Emils Cheese Pizza",<br>
-      "price": "12.25"<br>
-    },{<br>
-      "shortDescription": "Knorr Creamy Chicken",<br>
-      "price": "1.26"<br>
-    },{<br>
-      "shortDescription": "Doritos Nacho Cheese",<br>
-      "price": "3.35"<br>
-    },{<br>
-      "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",<br>
-      "price": "12.00"<br>
-    }<br>
-  ],<br>
-  "total": "35.35"<br>
-}<br>
+```json
+{
+  "retailer": "Target",
+  "purchaseDate": "2022-01-01",
+  "purchaseTime": "13:01",
+  "items": [
+    {
+      "shortDescription": "Mountain Dew 12PK",
+      "price": "6.49"
+    },{
+      "shortDescription": "Emils Cheese Pizza",
+      "price": "12.25"
+    },{
+      "shortDescription": "Knorr Creamy Chicken",
+      "price": "1.26"
+    },{
+      "shortDescription": "Doritos Nacho Cheese",
+      "price": "3.35"
+    },{
+      "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",
+      "price": "12.00"
+    }
+  ],
+  "total": "35.35"
+}
+```
+```text
 
 2. This receipt should be pasted into the request body of the Process Receipts (POST) route.
 3. Run the API using 'go run main.go' or your IDE's launch system.
