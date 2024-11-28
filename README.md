@@ -15,7 +15,7 @@ To setup this project and run it properly locally, here are some steps you'll ne
 
 1. To test either of the available routes, you'll first need a single receipt that matches the following format (there can be any number of items in the "items" slice):
 
-`{<br>
+{<br>
   "retailer": "Target",<br>
   "purchaseDate": "2022-01-01",<br>
   "purchaseTime": "13:01",<br>
@@ -38,7 +38,7 @@ To setup this project and run it properly locally, here are some steps you'll ne
     }<br>
   ],<br>
   "total": "35.35"<br>
-}`<br>
+}<br>
 
 2. This receipt should be pasted into the request body of the Process Receipts (POST) route.
 3. Run the API using 'go run main.go' or your IDE's launch system.
